@@ -1,8 +1,11 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+
 import javax.swing.JFrame;
 
 public class GMainFrame extends JFrame {
 	private GMenuBar menuBar; 
-//	private ToolBar toolBar;
+	private GToolBar toolBar;
 	private GDrawingPanel drawingPanel;
 
 	public GMainFrame() {
@@ -13,12 +16,16 @@ public class GMainFrame extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// components
-
 		this.menuBar = new GMenuBar();
 		this.setJMenuBar(menuBar);
-//		this.toolBar = new ToolBar();
+		
+		BorderLayout layout = new BorderLayout();
+		this.setLayout(layout);
+		
+		this.toolBar = new GToolBar();
+		this.add(this.toolBar, BorderLayout.NORTH);
 
 		this.drawingPanel = new GDrawingPanel();
-		this.add(drawingPanel);
+		this.add(drawingPanel, BorderLayout.CENTER);
 	}
 }

@@ -3,7 +3,8 @@ import javax.swing.JMenuBar;
 
 public class GMenuBar extends JMenuBar {
 	public GMenuBar() {
-		JMenu fileMenu = new JMenu("File");
-		this.add(fileMenu);
+		GFileMenu fileMenu = new GFileMenu("File");
+		this.add(fileMenu);	
+;
 	}
 }

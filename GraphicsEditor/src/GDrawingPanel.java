@@ -4,7 +4,8 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 
 public class GDrawingPanel extends JPanel {
-
+	private static final long serialVersionUID = 1L;
+	
 	public GDrawingPanel() {
 		this.setBackground(Color.WHITE);
 	}

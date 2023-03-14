@@ -10,7 +10,6 @@ public class GMainFrame extends JFrame {
 
 	public GMainFrame() {
 		// attributes
-		this.setVisible(true);
 		this.setLocation(200, 100);
 		this.setSize(600, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

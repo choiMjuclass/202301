@@ -5,6 +5,8 @@ public class GToolBar extends JToolBar {
 	private static final long serialVersionUID = 1L;
 
 	public GToolBar() {
+		super();
+		
 		JRadioButton btnRectangle = new JRadioButton("Rectangle");
 		this.add(btnRectangle);
 		

@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+
 import javax.swing.JFrame;
 
 public class GMainFrame extends JFrame {
@@ -9,8 +10,9 @@ public class GMainFrame extends JFrame {
 	private GDrawingPanel drawingPanel;
 
 	public GMainFrame() {
+		super();
+		
 		// attributes
-		this.setVisible(true);
 		this.setLocation(200, 100);
 		this.setSize(600, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,7 +23,7 @@ public class GMainFrame extends JFrame {
 		
 		BorderLayout layout = new BorderLayout();
 		this.setLayout(layout);
-		
+
 		this.toolBar = new GToolBar();
 		this.add(this.toolBar, BorderLayout.NORTH);
 

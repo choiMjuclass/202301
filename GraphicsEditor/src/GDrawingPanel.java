@@ -7,6 +7,8 @@ public class GDrawingPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	public GDrawingPanel() {
+		super();
+		
 		this.setBackground(Color.WHITE);
 	}
 	public void paint(Graphics graphics) {
